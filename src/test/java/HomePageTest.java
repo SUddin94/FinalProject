@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public class HomePageTest {
+import pages.HomePage;
+
+public class HomePageTest {
+
 }
