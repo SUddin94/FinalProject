@@ -30,8 +30,7 @@ public class RegisterPage extends BaseClass {
         genderButton.click();
     }
 
-    public void setFirstName() {
-        firstName.sendKeys("Shams");
+    public void setFirstName() {firstName.sendKeys("Shams");
     }
 
     public void setLastName() {
