@@ -34,5 +34,6 @@ public class HomePage extends BaseClass {
         return PageFactory.initElements(driver, FollowUsPage.class);
     }
 
+    // By: Shams Uddin
 
 }

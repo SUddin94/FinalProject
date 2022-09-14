@@ -15,5 +15,7 @@ public class RegisterPageTest extends BaseClass {
             e.printStackTrace();
         }
     }
+
+    // By: Shams Uddin
 }
 
