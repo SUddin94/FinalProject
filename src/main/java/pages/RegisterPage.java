@@ -26,31 +26,14 @@ public class RegisterPage extends BaseClass {
     @FindBy(id = "register-button")
     private WebElement registerButton;
 
-    public void selectGender() {
+    public void personalInfo() {
         genderButton.click();
-    }
-
-    public void setFirstName() {
         firstName.sendKeys("Shams");
-    }
-
-    public void setLastName() {
         lastName.sendKeys("Uddin");
-    }
-
-    public void setEmail() {
-        email.sendKeys("finalprojectpnt@gmail.com");
-    }
-
-    public void setPassword() {
-        password.sendKeys("FinalProject123");
-    }
-
-    public void setConfirmPassword() {
-        confirmPassword.sendKeys("FinalProject123");
-    }
-
-    public void clickRegister() {
+        email.sendKeys(getPropertyValue("email"));
+        password.sendKeys(getPropertyValue("password"));
+        confirmPassword.sendKeys(getPropertyValue("password"));
         registerButton.click();
     }
+
 }

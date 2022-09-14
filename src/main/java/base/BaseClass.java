@@ -1,5 +1,6 @@
 package base;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -67,4 +68,13 @@ public class BaseClass {
        driver.close();
        driver.quit();
    }
+
+    public void iFrame(){
+        driver.switchTo().frame(0);
+    }
+
+    public void scrollJS(int numOfPixels){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript(String.valueOf(numOfPixels));
+    }
 }
