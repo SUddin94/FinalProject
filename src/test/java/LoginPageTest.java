@@ -2,13 +2,12 @@ import base.BaseClass;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import pages.HomePage;
-import pages.RegisterPage;
 
-public class RegisterPageTest extends BaseClass {
+public class LoginPageTest extends BaseClass {
 
     @Test
-    public void registerPageTest(){
-        PageFactory.initElements(driver, HomePage.class).registerPage().personalInfo();
+    public void loginPageTest(){
+        PageFactory.initElements(driver, HomePage.class).loginPage().login();
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
@@ -16,4 +15,3 @@ public class RegisterPageTest extends BaseClass {
         }
     }
 }
-

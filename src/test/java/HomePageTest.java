@@ -9,7 +9,14 @@ public class HomePageTest extends BaseClass {
     @Test(enabled = true)
     public void homePageTest(){
         homePage = new HomePage();
+        homePage.registerPage();
+    }
+
+    @Test(enabled = true)
+    public void homePageTest2(){
+        homePage = new HomePage();
         homePage.loginPage();
     }
+
 
 }
