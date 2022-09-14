@@ -14,4 +14,6 @@ public class LoginPageTest extends BaseClass {
             e.printStackTrace();
         }
     }
+
+    // By: Shams Uddin
 }

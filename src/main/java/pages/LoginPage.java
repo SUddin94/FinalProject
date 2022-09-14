@@ -23,4 +23,6 @@ public class LoginPage extends BaseClass {
         loginButton.click();
         return this;
     }
+
+    // By: Shams Uddin
 }

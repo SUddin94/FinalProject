@@ -14,4 +14,6 @@ public class FollowUsPageTest extends BaseClass {
             e.printStackTrace();
         }
     }
+
+    // By: Shams Uddin
 }

@@ -38,7 +38,6 @@ public class FollowUsPage extends BaseClass {
         return this;
     }
 
-
-
+    // By: Shams Uddin
 
 }

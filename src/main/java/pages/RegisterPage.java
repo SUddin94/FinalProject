@@ -36,4 +36,6 @@ public class RegisterPage extends BaseClass {
         registerButton.click();
     }
 
+    // By: Shams Uddin
+
 }
