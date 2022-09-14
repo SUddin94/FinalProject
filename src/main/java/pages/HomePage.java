@@ -11,17 +11,27 @@ public class HomePage extends BaseClass {
         PageFactory.initElements(driver,this);
     }
 
-    @FindBy(css = "a[href='/register?returnUrl=%2F']") private WebElement registerButton;
-    @FindBy(css = "a[href='/login?returnUrl=%2F']") private WebElement loginButton;
+    @FindBy(linkText = "Register") private WebElement registerButton;
+    @FindBy(linkText = "Log in") private WebElement loginButton;
+
+
 
     public RegisterPage registerPage(){
+        iFrame();
         registerButton.click();
         return PageFactory.initElements(driver,RegisterPage.class);
     }
 
     public LoginPage loginPage(){
+        iFrame();
         loginButton.click();
         return PageFactory.initElements(driver,LoginPage.class);
+    }
+
+    public FollowUsPage followUsLink() {
+        iFrame();
+        scrollJS(1000);
+        return PageFactory.initElements(driver, FollowUsPage.class);
     }
 
 
