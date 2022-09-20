@@ -28,16 +28,16 @@ public class RegisterPage extends BaseClass {
 
     public void personalInfo() {
         genderButton.click();
-<<<<<<< HEAD
+//<<<<<<< HEAD
     }
 
     public void setFirstName() {firstName.sendKeys("Shams");
     }
 
     public void setLastName() {
-=======
+//=======
         firstName.sendKeys("Shams");
->>>>>>> 3c00f3735b7652a506e648db5756204c6eb34565
+//>>>>>>> 3c00f3735b7652a506e648db5756204c6eb34565
         lastName.sendKeys("Uddin");
         email.sendKeys(getPropertyValue("email"));
         password.sendKeys(getPropertyValue("password"));

@@ -7,7 +7,7 @@ public class ElectronicPageTest extends BaseClass {
     @Test
     public void asertPrice(){
         electronicsPage= new ElectronicsPage();
-        electronicsPage.CheckPrice();
+          electronicsPage.CheckPrice();
 
     }
 }
